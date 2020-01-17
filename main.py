@@ -2,8 +2,6 @@ import string
 
 CHARS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-print(len(CHARS))
-
 
 def baseChanger(num, fromBase, toBase) -> string:
     return base10ToNewBase(oldBaseTo10Base(num, fromBase), toBase)
