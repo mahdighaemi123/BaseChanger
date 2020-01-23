@@ -1,9 +1,10 @@
 import string
+import random
 
 CHARS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 
-def baseChanger(num, fromBase, toBase) -> string:
+def baseChanger(num: string, fromBase: string, toBase: int) -> string:
     return base10ToNewBase(oldBaseTo10Base(num, fromBase), toBase)
 
 
@@ -21,7 +22,7 @@ def base10ToNewBase(num, base) -> string:
 
 
 def oldBaseTo10Base(num, base) -> string:
-    num = str(num)
+    num = str(num).upper()
     base = int(base)
     num = num[::-1]
 
